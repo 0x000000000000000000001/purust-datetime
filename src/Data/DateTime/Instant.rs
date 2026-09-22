@@ -10,3 +10,19 @@ pub fn Data_DateTime_Instant_toDateTimeImpl(
     let time = milliseconds.rem_euclid(86_400_000);
     constructor(year, month, day, time / 3_600_000, (time / 60_000) % 60, (time / 1000) % 60, time % 1000)
 }
+
+pub fn Data_DateTime_Instant_fromDateTimeImpl() -> crate::UnknownType {
+    crate::Value::Func7(purust_core::Func7::Shared(std::rc::Rc::new(
+        |year, month, day, hour, minute, second, millisecond| {
+            crate::mk_number(Purs_Data_Date::purust_utc_milliseconds(
+                year.unwrap_int(),
+                month.unwrap_int(),
+                day.unwrap_int(),
+                hour.unwrap_int(),
+                minute.unwrap_int(),
+                second.unwrap_int(),
+                millisecond.unwrap_int(),
+            ))
+        },
+    )))
+}

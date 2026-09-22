@@ -1,0 +1,28 @@
+check Duration monoid
+true
+Check that Hour is a good BoundedEnum
+Check that Minute is a good BoundedEnum
+Check that Second is a good BoundedEnum
+Check that Millisecond is a good BoundedEnum
+Check that Time is a good Bounded
+Check that adjust behaves as expected
+Check that diff behaves as expected
+Check that Year is a good BoundedEnum
+Check that Month is a good BoundedEnum
+Check that Day is a good BoundedEnum
+Check that Date is a good Bounded
+Check that the earliest date is a valid date
+Check that the latest date is a valid date
+Check that weekday behaves as expected
+Check that diff behaves as expected
+Check that isLeapYear behaves as expected
+Check that epoch is correctly constructed
+Check that adjust behaves as expected
+Check that adjust behaves as expected
+Check that diff behaves as expected
+Check that the earliest date is a valid Instant
+Check that the latest date is a valid Instant
+Check that an Instant can be constructed from epoch
+Check that instant/datetime conversion is bijective
+Check that diff behaves as expected
+All tests done
